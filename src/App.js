@@ -3,8 +3,6 @@ import './App.css';
 import Search from './components/Search'
 import Product from './components/Product'
 
-
-
 class App extends Component{
   state ={
     results:[]

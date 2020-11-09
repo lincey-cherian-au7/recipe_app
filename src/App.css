@@ -63,13 +63,13 @@ Button{
 
 .recipes__title {
   color: #220066;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.1rem;
   padding: 1.8rem 0 0.2rem 0;
 }
 
 .recipes__subtitle {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 2px;
@@ -172,5 +172,4 @@ input:-webkit-autofill {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
-  
 }
