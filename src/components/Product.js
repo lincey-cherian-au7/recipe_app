@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {Link} from  'react-router-dom'
+
 function Product(props) {
     return (
         <div className="container">
@@ -19,7 +21,9 @@ function Product(props) {
                                 {(Number(ele.recipe.calories)).toFixed(2)}
                                 </span></p>
                             </div> 
-                            <button className="recipe_buttons"  style={{color:"#ff006b"}}>View Recipe</button>
+                            <button className="recipe_buttons"  style={{color:"#ff006b"}}>
+                                <Link to={{pathname:`/recipe/${ele.recipe.label}`,state:{recipe:ele.recipe.label}}}>View Recipe</Link>
+                                </button>
                         </div>
                     </div>
                 )
