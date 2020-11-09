@@ -1,11 +1,10 @@
 import React from 'react'
-import {Button } from 'antd';
 
 function Search(props) {
     return (
-        <form onSubmit={props.getRecipe}>
-            <input type="text" name="recipe"/>
-                <Button>Search</Button>
+        <form onSubmit={props.getRecipe} style={{marginBottom:'2rem'}}>
+            <input className="form__input" type="text" name="recipe"/>
+                <button className="form__button" style={{color:"#ff006b"}} type="submit" onClick={()=>props.getRecipe}>Search</button>
         </form>
     )
 }
